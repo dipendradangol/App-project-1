@@ -11,14 +11,6 @@ function initMap() {
     // New map
     var map = new google.maps.Map(document.getElementById('map'), center);
 
-    // Listen for click on map
-    google.maps.event.addListener(map, 'click', function (event) {
-        // Add marker
-        addMarker({
-            coords: event.latLng
-        });
-    });
-
     var infoWindow;
     infoWindow = new google.maps.InfoWindow;
 
